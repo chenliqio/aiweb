@@ -9,10 +9,15 @@ const Case = () => {
           <img src="/images/case1.png" alt="" />
         </div>
         <div className="col-span-1">
-          <img src="/images/case2.png" alt="" />
+          <a href="https://chatfo.ai/" target="_blank">
+            <img src="/images/case2.png" alt="" />
+          </a>
         </div>
         <div className="col-span-1">
-          <img src="/images/case3.png" alt="" />
+          <a href="https://minimetafarm.com/" target="_blank">
+            {" "}
+            <img src="/images/case3.png" alt="" />
+          </a>
         </div>
         <div className="col-span-1">
           <img src="/images/case4.png" alt="" />
