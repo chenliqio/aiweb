@@ -32,7 +32,7 @@ const Part2 = () => {
   ];
 
   return (
-    <div className="w-full my-[100px] flex justify-center lg:px-[120px] px-[60px]">
+    <div className="w-full lg:my-[60px] my-[40px] flex justify-center lg:px-[120px] sm:px-[60px] px-[30px]">
       <div className="flex flex-col lg:flex-row flex-wrap gap-5  w-full max-w-[1200px]">
         <div className="flex flex-col flex-1 justify-between">
           {data.map((el, i) => {
@@ -43,8 +43,8 @@ const Part2 = () => {
                 }`}
                 key={i}
               >
-                <div className="absolute top-0 right-0">
-                  <img src={el.img} alt="bg" />
+                <div className="absolute top-0 right-0 h-full">
+                  <img src={el.img} alt="bg" className="h-full" />
                 </div>
                 <div className="flex flex-col absolute">
                   <h1 className="mb-4 text-xl">{el.title}</h1>
