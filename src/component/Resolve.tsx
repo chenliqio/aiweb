@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export const Resolve = () => {
   const data = [
@@ -47,7 +47,7 @@ export const Resolve = () => {
             <div className="min-w-[200px] lg:h-[200px] gap-3 lg:gap-0 lg:flex-col mb-2 bg-black/20 p-[10px] flex flex-row justify-center rounded-xl">
               {["AI+房产", "AI+寺庙", "AI+Web3"].map((item, index) => (
                 <div
-                  onClick={() => setIsActive(index)}
+                  onMouseOver={() => setIsActive(index)}
                   className={`text-center lg:text-2xl text-base text-white cursor-pointer rounded-md py-[14px] px-[10px]
                   ${index === isActive ? "bg-[#487BF1]" : ""}`}
                   key={item}
