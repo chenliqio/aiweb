@@ -12,7 +12,9 @@ const Header = () => {
           <div className="w-[160px] h-[80px]">
             <img src="/images/logo.png" alt="logo" />
           </div>
-          <div className=" text-white text-xl">合作咨询</div>
+          <div className=" text-white text-xl">
+            <a href="#footer">合作咨询</a>
+          </div>
         </div>
         <div className="flex justify-center items-center my-[270px]">
           <div className="lg:text-4xl text-3xl text-white font-bold mr-1">

@@ -47,7 +47,9 @@ const Part2 = () => {
                   <h1 className="mb-4 text-xl">{el.title}</h1>
                   <p className="mb-4 text-sm">{el.desc}</p>
                 </div>
-                <p className="text-sm absolute bottom-7">立即咨询&gt;&gt;</p>
+                <p className="text-sm absolute bottom-7">
+                  <a href="#footer">立即咨询&gt;&gt;</a>
+                </p>
               </div>
             );
           })}

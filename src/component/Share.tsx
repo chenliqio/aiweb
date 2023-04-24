@@ -34,7 +34,10 @@ const Share = () => {
                 <div className="flex flex-col ">
                   <h1 className="text-xl font-bold mb-2">{el.title}</h1>
                   <p className="text-base mb-2 leading-8">{el.desc}</p>
-                  <p className="text-base mb-8">立即咨询&gt;&gt;</p>
+                  <p className="text-base mb-8">
+                    {" "}
+                    <a href="#footer">立即咨询&gt;&gt;</a>
+                  </p>
                 </div>
               </div>
             );
