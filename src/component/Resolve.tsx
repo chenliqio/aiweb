@@ -39,12 +39,12 @@ export const Resolve = () => {
         }}
       >
         <div className="bg-black/30 h-full"></div>
-        <div className="lg:px-[120px] px-[60px] lg:py-[100px] md:py-5 py-5  absolute left-0 top-0 w-full h-full flex flex-col">
+        <div className="lg:px-[120px] sm:px-[60px] px-[30px] lg:py-[100px] md:py-5 py-5  absolute left-0 top-0 w-full h-full flex flex-col">
           <div className="text-center text-4xl text-white">
             全栈AI能力，提供一站式行业解决方案
           </div>
           <div className="mt-5 lg:mt-[90px] flex-1 flex flex-col lg:flex-row gap-5">
-            <div className="min-w-[200px] lg:h-[200px] gap-4 lg:gap-0 lg:flex-col mb-2 bg-black/20 p-[10px] flex flex-row justify-center rounded-xl">
+            <div className="min-w-[200px] lg:h-[200px] gap-3 lg:gap-0 lg:flex-col mb-2 bg-black/20 p-[10px] flex flex-row justify-center rounded-xl">
               {["AI+房产", "AI+寺庙", "AI+Web3"].map((item, index) => (
                 <div
                   onClick={() => setIsActive(index)}
@@ -63,7 +63,9 @@ export const Resolve = () => {
               </div>
               <div className="text-white mt-4">
                 {data[isActive].desc.map((item) => (
-                  <div className="lg:mb-5 mb-2 lg:leading-6">{item}</div>
+                  <div key={item} className="lg:mb-5 mb-2 lg:leading-6">
+                    {item}
+                  </div>
                 ))}
               </div>
             </div>
