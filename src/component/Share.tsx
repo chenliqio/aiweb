@@ -20,11 +20,11 @@ const Share = () => {
   ];
   return (
     <>
-      <div className="w-full flex flex-col  items-center">
-        <h1 className="lg:text-4xl  md:text-3xl text-2xl font-bold pt-[100px] mb-20">
+      <div className="w-full flex flex-col items-center">
+        <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold lg:pt-[100px] pt-[60px] lg:mb-20 mb-10">
           行业共进：同行交流、共享成长
         </h1>
-        <div className="grid lg:grid-cols-3 gap-5 md:grid-cols-2 grid-cols-1 mx-[120px]">
+        <div className="grid lg:grid-cols-3 gap-5 md:grid-cols-2 grid-cols-1 ">
           {data.map((el, i) => {
             return (
               <div className="bg-[#F2F2F2] w-[340px]  rounded p-[10px]" key={i}>
