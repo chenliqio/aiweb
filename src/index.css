@@ -8,6 +8,12 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New','AlimamaShuHeiTi-Bold',
     monospace;
 }
+
+/* @import url('../public/font/AlimamaShuHeiTi-Bold.ttf'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
