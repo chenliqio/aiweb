@@ -6,7 +6,7 @@ export const Resolve = () => {
       img: "/images/house.png",
       title: "AI+房产",
       desc: [
-        "智能化房源推荐：通过AI技术，对用户的带看记录、交流记录、搜索记录、房屋信息等方面进行分析，为用户提供更加贴合需求的房源推荐，提升用户的满意度和交易量",
+        "智能化房源推荐：通过AI技术，对用户的带看记录、交流记录、搜索记录、房屋信息等方面进行分析，为用户提供更加贴合需求的房源推荐，提升用户的满意度和交易量。",
         "智能化定价预测：通过AI技术对房地产市场的数据、历史走势、政策变化等方面进行分析，可以提供精准的房地产定价预测，帮助房地产企业制定更加科学、合理的战略和决策。",
         "智能化客户服务：通过AI技术实现自动化客服、智能机器人等多种形式的客户服务，为用户提供快捷、高效、个性化的服务体验，提升用户的满意度和信任度。",
         "智能化营销策略：通过AI技术对用户的行为和兴趣进行分析获得精准的用户画像，可以制定更加精准、有效的营销策略，促进房地产市场的增长和发展。",
@@ -39,7 +39,7 @@ export const Resolve = () => {
         }}
       >
         <div className="bg-black/30 h-full"></div>
-        <div className="px-[120px] lg:py-[100px] md:py-5 py-5  absolute left-0 top-0 w-full h-full flex flex-col">
+        <div className="lg:px-[120px] px-[60px] lg:py-[100px] md:py-5 py-5  absolute left-0 top-0 w-full h-full flex flex-col">
           <div className="text-center text-4xl text-white">
             全栈AI能力，提供一站式行业解决方案
           </div>
@@ -48,7 +48,7 @@ export const Resolve = () => {
               {["AI+房产", "AI+寺庙", "AI+Web3"].map((item, index) => (
                 <div
                   onClick={() => setIsActive(index)}
-                  className={`text-center text-2xl text-white cursor-pointer rounded-md py-[14px] 
+                  className={`text-center lg:text-2xl text-base text-white cursor-pointer rounded-md py-[14px] px-[10px]
                   ${index === isActive ? "bg-[#487BF1]" : ""}`}
                   key={item}
                 >
@@ -57,7 +57,7 @@ export const Resolve = () => {
               ))}
             </div>
 
-            <div className="min-h-[380px] flex-1 bg-black/50 lg:pt-10 pt-4 px-[30px] rounded-xl">
+            <div className="max-h-[400px] flex-1 bg-black/50 lg:pt-10 pt-4 px-[30px] rounded-xl overflow-scroll">
               <div className="text-white text-2xl font-medium">
                 {data[isActive].title}
               </div>

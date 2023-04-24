@@ -2,17 +2,24 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="w-full h-[392px] bg-black flex flex-col items-center ">
+    <div
+      id="footer"
+      className="w-full h-[392px] bg-black flex flex-col items-center justify-center "
+    >
       <div className="w-[160px] h-[80px] mt-[58px]">
         <img src="/images/logo.png" alt="logo" />
       </div>
       <div className="flex gap-5 mt-[30px]">
         <div className="flex flex-col items-center">
-          <div className="w-[100px] h-[100px] bg-gray-400"></div>
+          <div className="w-[100px] h-[100px]">
+            <img src="/images/wexin.jpeg" alt="" />
+          </div>
           <h1 className="text-base text-white mt-[10px]">AI技术交流群</h1>
         </div>
         <div className="flex flex-col items-center">
-          <div className="w-[100px] h-[100px] bg-gray-400"></div>
+          <div className="w-[100px] h-[100px]">
+            <img src="/images/wexin.jpeg" alt="" />
+          </div>
           <h1 className="text-base text-white mt-[10px]">合作咨询</h1>
         </div>
       </div>
