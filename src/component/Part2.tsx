@@ -15,16 +15,19 @@ const Part2 = () => {
   ];
   const data2 = [
     {
-      tag: "Chat FO正式版发布：求佛求心，应作如是观",
-      time: "2023.04.04",
+      tag: "文心一言出世 百度决战人工智能",
+      time: "2023.04.06",
+      src: "https://baijiahao.baidu.com/s?id=1762406916370198998&wfr=spider&for=pc",
     },
     {
-      tag: "MINIMETA STUDIO上线！专属你的mini酱女孩...",
-      time: "2023.03.31",
+      tag: "华为“盘古”大模型亮相，AI领域“纷争再起”",
+      time: "2023.04.11",
+      src: "https://baijiahao.baidu.com/s?id=1762834202433213747&wfr=spider&for=pc",
     },
     {
-      tag: "MINIMETA STUDIO上线！专属你的mini酱女孩",
-      time: "2023.03.31",
+      tag: "杀入GPT战场，“两翼齐飞”的360胜算有几分？",
+      time: "2023.04.18",
+      src: "https://www.thepaper.cn/newsDetail_forward_22738065",
     },
   ];
 
@@ -58,7 +61,9 @@ const Part2 = () => {
           {data2.map((el, i) => {
             return (
               <div className="felx flex-col  pt-9 px-[50px]" key={i}>
-                <h1 className="text-lg font-bold mb-4">{el.tag}</h1>
+                <a href={el.src} target="_blank">
+                  <h1 className="text-lg font-bold mb-4">{el.tag}</h1>
+                </a>
                 <p className=" text-base text-[#808080] font-normal">
                   {el.time}
                 </p>
