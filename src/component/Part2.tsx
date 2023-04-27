@@ -47,10 +47,10 @@ const Part2 = () => {
                   <img src={el.img} alt="bg" className="h-full" />
                 </div>
                 <div className="flex flex-col absolute">
-                  <h1 className="mb-4 text-xl">{el.title}</h1>
+                  <h1 className="mb-4 text-xl font-bold">{el.title}</h1>
                   <p className="mb-4 text-sm">{el.desc}</p>
                 </div>
-                <p className="text-sm absolute bottom-7">
+                <p className="text-sm absolute bottom-7 text-[#2A82E4]">
                   <a href="#footer">立即咨询&gt;&gt;</a>
                 </p>
               </div>

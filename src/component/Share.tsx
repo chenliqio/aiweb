@@ -21,22 +21,25 @@ const Share = () => {
   return (
     <>
       <div className="w-full flex flex-col items-center">
-        <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold lg:pt-[60px] pt-[40px] lg:mb-[60px] mb-10">
+        <h1 className="lg:text-4xl md:text-3xl text-2xl font-medium text-[#333333] lg:pt-[100px] pt-[60px] lg:mb-[80px] mb-12">
           行业共进：同行交流、共享成长
         </h1>
         <div className="grid lg:grid-cols-3 gap-5 md:grid-cols-2 grid-cols-1 ">
           {data.map((el, i) => {
             return (
-              <div className="bg-[#F2F2F2] w-[340px]  rounded p-[10px]" key={i}>
+              <div
+                className="bg-[#F2F2F2] w-[340px]  rounded-[10px] p-[10px]"
+                key={i}
+              >
                 <div className="mb-[30px]" key={i}>
                   <img src={el.img} alt="" />
                 </div>
                 <div className="flex flex-col ">
-                  <h1 className="text-xl font-bold mb-2">{el.title}</h1>
+                  <h1 className="text-xl font-bold mb-2 ">{el.title}</h1>
                   <p className="text-base mb-2 leading-8">{el.desc}</p>
-                  <p className="text-base mb-8">
+                  <p className="text-base mb-8 text-[#2A82E4]">
                     {" "}
-                    <a href="#footer">立即咨询&gt;&gt;</a>
+                    <a href="#footer ">立即咨询&gt;&gt;</a>
                   </p>
                 </div>
               </div>

@@ -40,7 +40,7 @@ export const Resolve = () => {
       >
         <div className="bg-black/30 h-full"></div>
         <div className="lg:px-[120px] sm:px-[60px] px-[30px] lg:py-[100px] md:py-5 py-5  absolute left-0 top-0 w-full h-full flex flex-col">
-          <div className="text-center text-4xl text-white">
+          <div className="text-center text-4xl text-white font-medium">
             全栈AI能力，提供一站式行业解决方案
           </div>
           <div className="mt-5 lg:mt-[90px] flex-1 flex flex-col lg:flex-row gap-5">
